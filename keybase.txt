@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/endureblaze
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://endureblaze.cn
+  * I am endureblaze (https://keybase.io/endureblaze) on keybase.
+  * I have a public key ASAydpuU955fD-i9TEtS37s9imyZKz6vd9Ey71epMvw10Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012032769b94f79e5f0fe8bd4c4b52dfbb3d8a6c992b3eaf77d132ef57a932fc35d10a",
+      "host": "keybase.io",
+      "kid": "012032769b94f79e5f0fe8bd4c4b52dfbb3d8a6c992b3eaf77d132ef57a932fc35d10a",
+      "uid": "508a636d6fd07c4d76adf91136080f19",
+      "username": "endureblaze"
+    },
+    "merkle_root": {
+      "ctime": 1596002384,
+      "hash": "5526511af626792f3ee66d8baf6d072b2a065f6c381912ea1251e525bb17bb8389d456eb7e1583325c9c88ecf7df90ce664cf1702b56220f84d8f67f7bf3e2ca",
+      "hash_meta": "e002ec6961787f141f0effe845c834bf29751455cc1c6031cddf5ed6cac10d80",
+      "seqno": 17120682
+    },
+    "service": {
+      "entropy": "Owh7ucKdslnKAAgOEbbriLan",
+      "hostname": "endureblaze.cn",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1596002410,
+  "expire_in": 504576000,
+  "prev": "cab42733a5c6afc15678cb4c2ef7dbea99f4f52248175c7ff31099e0fd35166d",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMnablPeeXw/ovUxLUt+7PYpsmSs+r3fRMu9XqTL8NdEKp3BheWxvYWTESpcCCMQgyrQnM6XGr8FWeMtMLvfb6pn09SJIF1x/8xCZ4P01Fm3EILmdjtcf7K4w0WT5x8DyXLfYFtEJONX8dDbW7ZJzx2z2AgHCo3NpZ8RAQvB1LfCM2Jusf58GnbJSYJXAja1Oeo30JKCAx9BC360PmWiCPqJCLVX9+nQAc38Rs2RGE5vSk4MaQUO6RtYIAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINkQ5rLq2Ntaxu2cjvmQCcbVjXpphQi/QkDNs5EG8ZcOo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/endureblaze
+
+==================================================================
