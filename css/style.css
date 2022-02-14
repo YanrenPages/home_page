@@ -1,155 +1,83 @@
-#app,
-.title {
-  display: flex;
-  align-items: center;
+:root {
+  --color-text: #515151;
+  --color-text-emphasize: #333333;
+  --color-text-lighter: rgba(0, 0, 0, 0.4);
+  --color-text-solight: rgba(0, 0, 0, 0.16);
+  --color-background: #ffffff;
+  --color-background-inner: rgba(255, 255, 255, 0.8);
+  --color-decoration: rgba(0, 0, 0, 0.04);
+  --color-decoration-darker: rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-text: rgba(255, 255, 255, 0.6);
+    --color-text-emphasize: #eeeeee;
+    --color-text-lighter: rgba(255, 255, 255, 0.4);
+    --color-text-solight: rgba(255, 255, 255, 0.16);
+    --color-background: #222222;
+    --color-background-inner: rgba(hexToRGB(#222222), 0.8);
+    --color-decoration: rgba(255, 255, 255, 0.04);
+    --color-decoration-darker: rgba(255, 255, 255, 0.08);
+  }
+}
+
+body {
+  font: 400 16px/1.6 PingFang SC, Lantinghei SC, Microsoft Yahei,
+    Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  margin: 0;
+  position: relative;
+  padding-top: 10vh;
+  padding-right: 10vw;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+}
+
+main {
+  display: block;
   justify-content: center;
 }
 
-.title {
-  position: relative;
-  font-size: 8vw;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-transform: uppercase;
-
-  color: transparent;
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.6),
-    0px 4px 4px rgba(0, 0, 0, 0.05);
-}
-
-.title span {
-  display: block;
-  position: relative;
-  -o-box-flex: 0;
-  box-flex: 0;
-  -ms-flex: none;
-  flex: none;
-  white-space: pre;
-}
-
-a.link {
-  transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-  text-decoration: none;
-}
-
-a.link:hover {
-  border-bottom-color: transparent;
-  color: #47a3da !important;
-  text-decoration: none;
-}
-
-.content {
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-.content a {
-  color: #f8f9fa;
-}
-
-@media screen and (max-width: 736px) {
-  .content p {
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .content {
-    margin: 0 0 1em 0;
-  }
-}
-
-.fit__text {
-  font-size: 8vw;
-  color: transparent;
-  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.6),
-    0px 4px 4px rgba(0, 0, 0, 0.05);
-}
-
-.content .social-icons a:hover,
-.content .links li a:hover {
-  color: #47a3da;
-}
-
-.content {
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-li {
-  float: left;
-  list-style: none;
-}
-
-.content .social-icons {
-  margin-bottom: 30px;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-
-.content .social-icons a {
-  display: inline-block;
-  margin-left: 15px;
-  font-size: 13px;
-  color: #fefefe;
-  transition: all cubic-bezier(0.75, 0, 0.25, 1) 0.5s;
-}
-
-/*=================================*/
-
-.display-table {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
-.display-table-cell {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-  z-index: 10;
-}
-
-.typed-cursor {
-  font-weight: 100;
-}
-
-#typed {
-  transition: all ease-in-out 0.5s;
-  -webkit-transition: all cubic-bezier(0.75, 0, 0.25, 1) 0.5s;
-  color: transparent;
-  text-shadow: 0px 0px 1px rgba(71, 163, 218, 0.9),
-    0px 4px 4px rgba(0, 0, 0, 0.05);
-}
-
-#bottom {
+footer {
   position: fixed;
-  bottom: 1%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 80vw;
+  text-align: center;
+  bottom: 0;
+  color: var(--color-text-lighter);
 }
 
-#bottom p {
-  margin-top: 0;
-  margin-bottom: 0px;
+a {
+  text-decoration: none;
 }
 
-#ICP {
-  color: #f8f9fa;
+a {
+  display: inline-block;
+  margin-top: 2.4rem;
+  margin-right: 0.2rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--color-decoration);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: var(--color-text-lighter);
+  transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 700px) {
-  .links a {
-    font-size: 3vw;
-  }
-  #app .title {
-    font-size: 15vw;
-  }
-  .fit__text {
-    font-size: 12vw;
+a:hover {
+  background: var(--color-text);
+  color: var(--color-background);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--color-text-emphasize);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  a {
+    font-size: 0.8rem;
   }
 }
