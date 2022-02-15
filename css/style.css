@@ -76,6 +76,10 @@ h1 {
   font-weight: bold;
 }
 
+split {
+  color: var(--color-text-emphasize);
+}
+
 @media screen and (max-width: 400px) {
   a {
     font-size: 0.8rem;
