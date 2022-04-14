@@ -72,6 +72,14 @@ a:hover {
   color: var(--color-background);
 }
 
+#icp {
+  background-color: transparent;
+}
+
+#icp:hover {
+  color: var(--color-text-emphasize);
+}
+
 h1 {
   font-size: 3rem;
   color: var(--color-text-emphasize);
